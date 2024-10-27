@@ -5,7 +5,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import modelo.MonedaConstructor;
-import record.Moneda;
 
 public class GenerarArchivo {
     public void generadorJson(MonedaConstructor moneda) throws IOException {

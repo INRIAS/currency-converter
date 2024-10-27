@@ -16,12 +16,12 @@ public class Principal {
         double cantidad;
         String menu = """
                 ******************************************
-                1) Dólar ----------------> Peso Argentino
-                2) Peso Argentino -------> Dólar
-                3) Dólar ----------------> Real Brasileño
-                4) Real Brasileño -------> Dólar
-                5) Dólar ----------------> Peso Colombiano
-                6) Peso Colombiano ------> Dólar
+                1) Peso Argentino -------> Dólar
+                2) Dólar ----------------> Peso Argentino
+                3) Real Brasileño -------> Dólar
+                4) Dólar ----------------> Real Brasileño
+                5) Peso Colombiano ------> Dólar
+                6) Dólar ----------------> Peso Colombiano
                 0) Salir del Sistema
                 ******************************************
                 """;
@@ -54,28 +54,28 @@ public class Principal {
 
         switch (opcion) {
             case 1 -> {
-                base = "USD";
-                cambio = "ARS";
-            }
-            case 2 -> {
                 base = "ARS";
                 cambio = "USD";
             }
-            case 3 -> {
+            case 2 -> {
                 base = "USD";
-                cambio = "BRL";
+                cambio = "ARS";
             }
-            case 4 -> {
+            case 3 -> {
                 base = "BRL";
                 cambio = "USD";
             }
-            case 5 -> {
+            case 4 -> {
                 base = "USD";
-                cambio = "COP";
+                cambio = "BRL";
             }
-            case 6 -> {
+            case 5 -> {
                 base = "COP";
                 cambio = "USD";
+            }
+            case 6 -> {
+                base = "USD";
+                cambio = "COP";
             }
             default -> {
                 System.out.println("Opción no válida.");
